@@ -228,7 +228,7 @@
     <div class="flex flex-wrap items-center sm:-mx-3">
       <div class="text-center w-full sm:text-left sm:w-1/2 px-3">
         <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
-          <h1 class="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-7xl lg:text-8xl xl:text-8xl">
+          <h1 class="text-4xl mt-10 font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-7xl lg:text-8xl xl:text-8xl">
             <span class="block xl:inline">Externalisez votre</span>
             <span class="block text-blue-kiosk xl:inline">office management</span>
           </h1>
@@ -431,7 +431,7 @@
 
 <!-- Section 3 -->
 <section class="w-full bg-white">
-    <h2 class="text-4xl text-center font-extrabold tracking-tight text-black m-10 mb-20 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+    <h2 class="text-center font-extrabold tracking-tight text-black my-10 sm:mb-20 text-4xl sm:text-5xl xl:text-6xl">
         <span class="block xl:inline">Comment ça marche ?</span>
     </h2>
     <!--<div class="box-border flex flex-col items-center content-center px-8 mx-auto mb-20 leading-6 text-black md:flex-row max-w-7xl lg:px-16">
@@ -540,7 +540,7 @@
 
 <!-- Section 4 -->
 <section class="antialiased w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
-    <h2 class="text-4xl text-center font-extrabold tracking-tight text-black m-10 mb-20 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+    <h2 class="text-center font-extrabold tracking-tight text-black my-10 sm:mb-20 text-4xl sm:text-5xl xl:text-6xl">
         <span class="block xl:inline">Une équipe là pour vous</span>
     </h2>
     <div class="box-border flex flex-col items-center content-center px-8 mx-auto mb-20 leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
@@ -629,13 +629,13 @@
     <div class="flex flex-wrap items-start">
       <div class="antialiased w-full mt-10 max-w-3xl mx-auto px-3 order-0">
         <div class="w-full text-black text-center">
-          <h2 class="mb-4 text-6xl font-bold leading-tight tracking-tight sm:text-6xl font-heading">Qui sont nos <span class="text-yellow-kiosk">prestataires</span> ?</h2>
+          <h2 class="font-bold leading-tight tracking-tight my-10 text-4xl sm:text-5xl xl:text-6xl">Qui sont nos <span class="text-yellow-kiosk">prestataires</span> ?</h2>
           <p class="mb-4 font-medium text-gray-700 tracking-tight xl:mb-6">Après avoir rencontré beaucoup d’acteurs du changement,
             nous avons décidés de créer Kiosk, une plateforme qui promeut un écosystème responsable.</p>
         </div>
       </div>
     </div>
-    <h2 class="mt-10 text-4xl font-bold tracking-tight antialiased text-center">L’impact au cœur de leur modèle économique</h2>
+    <h2 class="mt-10 text-3xl font-bold tracking-tight antialiased text-center sm:text-4xl">L’impact au cœur de leur modèle économique</h2>
     <div class="antialiased grid grid-cols-4 gap-5 lg:grid-cols-12 sm:px-8 xl:px-0">
         <div class="relative flex flex-col items-center justify-start col-span-4 px-8 py-12 space-y-4 overflow-hidden">
             <h4 class="text-xl text-blue-kiosk font-thin uppercase">Écologique</h4>
@@ -738,7 +738,6 @@
 
         slider.each(function(index) {
             $(this).slick({
-                centerMode: true,
                 rtl: rtl,
                 cssEase: 'linear',
                 speed: 9000,
@@ -749,6 +748,13 @@
                 arrows: false,
                 dots: false,
                 pauseOnHover: false,
+                pauseOnFocus: false,
+                mobileFirst: true,
+                draggable: true,
+                swipeToSlide: true,
+                swipe: true,
+                touchMove: true,
+                touchThreshold: 1,
                 responsive: [{
                 breakpoint: 1280,
                 settings: {
